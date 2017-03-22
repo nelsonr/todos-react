@@ -1,0 +1,64 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.todo-app {
+  .new-todo {
+    margin-bottom: 10px;
+
+    form {
+      display: flex;
+    }
+
+    input {
+      padding: 4px 6px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    input + button {
+      margin-left: 6px;
+    }
+
+    button {
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+
+  .todo-list {
+    .todo-row {
+      display: flex;
+      align-items: center;
+      border: 1px solid #CCC;
+      padding: 6px 12px;
+      margin-bottom: 10px;
+
+      input + label {
+        margin-left: 10px;
+        flex: 1;
+      }
+    }
+  }
+
+  .todo-actions {
+    button {
+      margin-left: 4px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
